@@ -115,21 +115,33 @@ li {
 	border-color: green;
 }
 
-.cerveny {
-	color: tomato;
-}
-
-
 .aktivni {
 	background-color: cyan;
 	color: black;
 	border-color: blue;
 }
 
+/* Přidáno */
+
+.cerveny {
+	color: red;
+}
+
+hr {
+	margin: 50px 0;
+}
+
 .bold {
 	font-weight: bold;
 }
 
+.vypracovani {
+	text-align: center;
+	margin-top: 50px;
+}
+
 .text {
 	font-size: 16px;
+	padding: 30px;
+	border: 1px dashed black;
 }
