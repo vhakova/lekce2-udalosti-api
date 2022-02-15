@@ -12,3 +12,10 @@ function ztloustni() {
     let text = document.querySelector('p');
     text.style.fontWeight = 'bold';
 }
+
+function zcervenej() {
+    let text = document.querySelector('p');
+    text.classList.toggle('cerveny');
+}
+
+

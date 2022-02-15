@@ -115,9 +115,21 @@ li {
 	border-color: green;
 }
 
+.cerveny {
+	color: tomato;
+}
+
 
 .aktivni {
 	background-color: cyan;
 	color: black;
 	border-color: blue;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.text {
+	font-size: 16px;
 }
