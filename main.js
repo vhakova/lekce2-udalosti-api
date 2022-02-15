@@ -2,20 +2,30 @@
 
 console.log('Jsem nalinkovaný')
 
-let nadpis = document.querySelector('h1');
+/**let nadpis = document.querySelector('h1');
 
 nadpis.classList.add('none');
 nadpis.classList.remove('cosi');
-/**nadpis.classList.toggle('něco') - přepínátko = když to tam je, tak se to vypne, když to tam není, zapne se to**/
+nadpis.classList.toggle('něco') - přepínátko = když to tam je, tak se to vypne, když to tam není, zapne se to**/
+
+let text = document.querySelector('#text')
 
 function ztloustni() {
-    let text = document.querySelector('p');
-    text.style.fontWeight = 'bold';
+    text.classList.add('bold');
+}
+
+function zhubni() {
+    text.classList.remove('bold');
 }
 
 function zcervenej() {
-    let text = document.querySelector('p');
     text.classList.toggle('cerveny');
+}
+
+function zvetsiSe() {
+    style = window.getComputedStyle(text, 0).getPropertyValue('font-size');
+    velikost = parseFloat(style);
+    text.style.fontSize = (velikost + 1) + 'px';
 }
 
 
