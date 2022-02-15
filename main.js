@@ -28,4 +28,36 @@ function zvetsiSe() {
     text.style.fontSize = (velikost + 1) + 'px';
 }
 
+/** Písnička */
+
+let nahravka = document.getElementById('zvukovaStopa');
+
+function hudboHrej() {
+    nahravka.play();
+}
+
+function hudboDost() {
+    nahravka.pause();
+}
+
+function hudboZnovu() {
+    nahravka.currentTime = 0;
+    nahravka.play();
+}
+
+function hudboTicho() {
+    nahravka.volume = 0;
+    nahravka.play();
+}
+
+function hudboNapul() {
+    nahravka.volume = 0.5;
+    nahravka.play();
+}
+
+function hudboNahlas() {
+    nahravka.volume = 1;
+    nahravka.play();
+}
+
 

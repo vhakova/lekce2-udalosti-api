@@ -19,8 +19,6 @@
 
 	<button class="tlacitko">Čudlajs</button>
 
-	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
-
 	<hr>
 
 	<div class="vypracovani">
@@ -30,6 +28,27 @@
 		<button class="tlacitko" onclick="zcervenej()">Červený po kliknutí</button>
 
 		<button class="tlacitko" onclick="zvetsiSe()">Větší po kliknutí</button>
+
+	</div>
+
+	<hr>
+
+	<div class="vypracovani">
+
+		<audio id="zvukovaStopa" src="audio/dingdingdang.mp3" preload="auto"></audio>
+
+		<h1>Nahrávka</h1>
+		<button class="tlacitko" onclick="hudboHrej()">Zapni mě</button>
+		<button class="tlacitko" onclick="hudboDost()">Pauzni mě</button>
+		<button class="tlacitko" onclick="hudboZnovu()">A zase zpátky</button>
+
+		<div class="volume">
+			<h3>Hlasitost</h3>
+			<button class="tlacitko" onclick="hudboTicho()">0</button>
+			<button class="tlacitko" onclick="hudboNapul()">0.5</button>
+			<button class="tlacitko" onclick="hudboNahlas()">1</button>
+		</div>
+
 
 	</div>
 
